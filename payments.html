@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses & Materials -Information Technology</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"></head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="/Images/favicon.png.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+
+
+<body>
+     <!-- Header/Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <!-- Logo (Left side) -->
+            <a class="navbar-brand" href="#">
+                <img src="https://shorturl.at/hcz7g"  alt="FUT IFT Logo" class="img-fluid" style="max-height: 60px;">
+            </a>
+            <!-- Navbar toggler for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="dashboard.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses&materials.html">Courses & Materials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news&events.html">News & Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="payments.html">Payments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<div id="vanta-bg">
+<!-- Vanta.js Scripts -->
+
+<script>
+  let vantaEffect;
+
+  function initVanta() {
+    if (vantaEffect) vantaEffect.destroy(); // destroy previous instance if any
+
+    vantaEffect = VANTA.NET({
+      el: "#vanta-bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.0,
+      scaleMobile: 1.0, // maintain effect scale on mobile
+      color: 0x6a1b9a,
+      backgroundColor: 0xffffff,
+      points: 5.0, // reduced points for smoother performance on mobile
+      maxDistance: 20.0,
+      spacing: 30.0
+    });
+  }
+
+  window.addEventListener('DOMContentLoaded', initVanta);
+  window.addEventListener('resize', () => {
+    if (vantaEffect) vantaEffect.destroy();
+    initVanta();
+  });
+</script>
+
+      
+
+<!-- Page Header (Purple Rectangle) for Departmental Payments -->
+<section class="page-header">
+    <div class="page-header-content">
+      <i class="fas fa-credit-card"></i>
+      <h1 class="page-title">Departmental Payments</h1>
+    </div>
+  </section>
+
+  
+  <!-- Payment Instructions Section -->
+<section class="payment-instructions">
+    <div class="payment-instructions-container">
+      <p class="payment-instructions-text">
+        <h4>Payments Instructions.</h4><hr>
+        <ul>
+            <li>All payments are safe, secure, and trackable</li>
+            <li>Choose the fees applicable to you</li>
+            <li>Select your preferred payment method. Once completed, you will receive an instant receipt for your payment.</li>
+        </ul> 
+      </p>
+    </div>
+  </section>
+  
+
+
+<!-- Payment Fees Section -->
+<section class="payment-fees">
+    <div class="payment-fees-container">  
+      <div class="payment-fees-grid">
+        <!-- Departmental Due -->
+        <div class="payment-fee-card">
+          <h3 class="fee-title">Departmental Due</h3>
+          <p class="fee-description">This fee covers the departmental operational costs for the semester.</p>
+          <p class="fee-amount">₦2,000</p>
+          <a href="#" class="pay-now-btn">Pay Now</a>
+        </div>
+  
+        <!-- Association Fee -->
+        <div class="payment-fee-card">
+          <h3 class="fee-title">Association Fee</h3>
+          <p class="fee-description">Fee for the student association's activities and events.</p>
+          <p class="fee-amount">₦2,000</p>
+          <a href="#" class="pay-now-btn">Pay Now</a>
+        </div>
+  
+        <!-- Faculty Fee -->
+        <div class="payment-fee-card">
+          <h3 class="fee-title">Faculty Fee</h3>
+          <p class="fee-description">Fee for the general faculty maintenance and operations.</p>
+          <p class="fee-amount">₦1,000</p>
+          <a href="#" class="pay-now-btn">Pay Now</a>
+        </div>
+  
+        <!-- Class Rep Due -->
+        <div class="payment-fee-card">
+          <h3 class="fee-title">Class Rep Due</h3>
+          <p class="fee-description">Fee for the class representative's activities and duties.</p>
+          <p class="fee-amount">₦500</p>
+          <a href="#" class="pay-now-btn">Pay Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+</div>
+
+
+  <!--- FOOTER-->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-col">
+        <img src="https://github.com/charlie8997/futminna-it-dev/blob/main/ift_logo.png?raw=true" alt="IFT Logo" class="footer-logo" />
+        <p class="footer-title">Information Technology</p>
+      </div>
+      <div class="footer-col center">
+        <p class="footer-center-title">School of Information and Communication Technology</p>
+      </div>
+      <div class="footer-col">
+        <img src="https://github.com/charlie8997/futminna-it-dev/blob/main/fut_logo.png?raw=true" alt="FUTMinna Logo" class="footer-logo" />
+        <p class="footer-title">Federal University of Technology, Minna</p>
+      </div>
+    </div>
+    
+  
+    <div class="footer-divider"></div>
+  
+    <div class="footer-bottom">
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/16Bus8KjJv/"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/enigma_ift2023.24?igsh=anZrZmQ1NW9oNnI5"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <p class="copyright">
+        &copy; 2025 Department of Information Technology. All rights reserved.
+      </p>
+    </div>
+</footer>
+  
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>  
+</html>
